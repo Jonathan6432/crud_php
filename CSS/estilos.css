@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: linear-gradient(to right, #243949 0%, #517fa4 100%); */
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  margin: 0;
+}
+.titulo {
+  justify-content: center;
+  text-align: center;
+  color: rgb(231, 226, 225);
+  padding: 12px;
+  font-size: 40px;
+}
+
+.agregar {
+  background-image: linear-gradient(to right, #3d60c1 0%, rgb(5, 8, 92) 100%);
+  cursor: pointer;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+button a {
+  text-decoration: none;
+  color: #d4dff5;
+}
+
+.agregar:hover {
+  transform: scale(0.9);
+  box-shadow: 0 0px 40px rgba(205, 205, 13, 0.4);
+  background-image: linear-gradient(to top, #98682a 0%, #041420 100%);
+
+}
+
+/* efecto para que el boton se realice de atras hacia atras */
+
+table {
+  width: 80%;
+  /* border: 1px solid #000; */
+  border-collapse: collapse; /* Se elimina el espacio entre cada item */
+  /* background: #000; */
+  /* background-color: blue; */
+  cursor: pointer;
+  margin: 10px auto; /* Centrar la tabla */
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(254, 135, 0, 0.4); /* Sobreado al rededor */
+}
+
+th,
+td {
+  width: 10%;
+  padding: 10px;
+  border: 2px solid #7b7ed5;
+  text-align: center;
+}
+
+table thead {
+  background-color: #1e3799;
+  color: rgb(156, 189, 225);
+  text-align: center;
+  background-image: linear-gradient(to top, #2a5298 0%, #041420 100%);
+}
+
+table tbody {
+  background-image: linear-gradient(60deg, #021c35 0%, #485563 100%);
+  border: 1px solid #000;
+  padding: 0.1; /* el pading o relleno entre cada item */
+  color: rgb(238, 223, 219);
+}
+
+table tfoot {
+  background-image: linear-gradient(to top, #2a5298 0%, #041420 100%);
+  background-blend-mode: multiply;
+  text-align: center;
+  color: #d25d22;
+}
+
+tr:nth-child(even) {
+  /* Efecto para los colores cebra */
+  background-image: linear-gradient(
+    to top,
+    #535b6a 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
+}
+
+tr:hover td {
+  background: #00050e;
+  color: #dde5ed;
+}
+tr:active td {
+  /* Este efecto sirve para que cuando se da click camabia a un color mas oscuro */
+  background-image: linear-gradient(to top, #98682a 0%, #041420 100%);
+  color: rgb(224, 216, 211);
+}
+
+tr {
+  /* estilo para que no cambie de una manera brusca */
+  transition: all ease 300ms;
+}
+
+/* td a {
+  text-decoration: none;
+  padding: 5px;
+} */
+
+.acciones a {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 901px) {
+  .agregar {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  table {
+    font-size: 12px;
+    padding: 50px 0px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  th,
+  td {
+    padding: 10px 5px;
+    text-align: center;
+  }
+
+  .acciones a {
+    font-size: 8px;
+    margin: 5px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 460px) {
+  .agregar {
+    padding: 5px 6px;
+    font-size: 10px;
+    margin: 10px;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+  img {
+    width: 15%;
+    background-color: #0653b8;
+  }
+
+  table {
+    font-size: 10px;
+    padding: 50px 10px;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  th,
+  td {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .acciones a {
+    font-size: 8px;
+    margin: 5px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+  }
+}

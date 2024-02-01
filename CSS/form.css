@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  /* display: flex;
+  align-items: center; horizontal: Estos valores nos sirven para centrar los elementos */
+  /* justify-content: center; centrar verical:  */
+  background-image: linear-gradient(to top, #b2c3e1 0%, #041420 100%);
+}
+
+form {
+  margin: 0 auto;
+  width: 500px;
+  background-image: linear-gradient(to top, #2a5298 0%, #041420 100%);
+  padding: 50px 55px;
+  border-radius: 3px;
+  font-size: 20px;
+  box-shadow: 0 0 30px rgba(254, 135, 0, 0.4); /* Sobreado al rededor */
+}
+
+.input-group {
+  display: flex; /* se agrega estos valores para poder organizar los input en forma de columna */
+  flex-direction: column;
+  text-align: left;
+  color: #fbf4ed;
+  font-weight: 600;
+}
+
+h1 {
+  color: #ececef;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 20px;
+}
+
+.field {
+  padding: 17px 25px;
+  margin-bottom: 20px;
+  border: 2px solid #1f53c5;
+  margin: 10px;
+  width: 400px;
+  color: #f0eceb;
+  background-color: #0a1f3a;
+  font-size: 20px;
+}
+
+
+.select{
+  width: 452px;
+}
+
+
+
+.field:focus {
+  outline: none;   /* Elimina el borde del input */
+  border-color: #fe870066;
+  /* border-style: dashed; */
+  border-width: 2px;
+  box-shadow: 0 0 30px #fe870066;
+
+}
+
+.enlace-form {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  color: #080808;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px 20px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(254, 135, 0, 0.4); /* Sobreado al rededor */
+  cursor: pointer;
+  background-color: #ebebf0;
+  margin-top: 40px;
+}
+
+.btn:hover {
+  background-color: #0a0f17;
+  color: #b2c3e1;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  form {
+    padding: 50px 30px;
+    width: 70%;
+    font-size: 15px;
+  }
+
+  .field {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 446px) {
+  form {
+    padding: 50px 30px;
+    width: 70%;
+    font-size: 12px;
+  }
+
+  .field {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+
+  .btn {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
